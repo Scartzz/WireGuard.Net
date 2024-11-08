@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <GlobalVersion>2024.11.08.0</GlobalVersion>
+        
+        <PackageVersion>$(GlobalVersion)</PackageVersion>
+        <AssemblyVersion>$(GlobalVersion)</AssemblyVersion>
+        <FileVersion>$(GlobalVersion)</FileVersion>
+        <Version>$(GlobalVersion)</Version>
+        <ApplicationVersion>$(GlobalVersion)</ApplicationVersion>
+        
+        <IsPackable>true</IsPackable>
+        
+        <Authors>Niklas H.</Authors>
+        <Description>Prototype of the WireGuard Protocol in .NET (dont use in production)</Description>
+        <PackageIconUrl>https://avatars.githubusercontent.com/u/63742361</PackageIconUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <RepositoryUrl>https://github.com/Scartzz/WireGuard.Net</RepositoryUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.1" />
+        <PackageReference Include="SauceControl.Blake2Fast" Version="2.0.0" />
+        <PackageReference Include="BouncyCastle.Cryptography" Version="2.3.0" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <None Include="../README.md" Pack="true" PackagePath="/"/>
+    </ItemGroup>
+            
+</Project>
