@@ -50,6 +50,8 @@ public class SimpleTimer : IDisposable
 
     public void Dispose()
     {
+        if (this._disposed)
+            return;
         this._disposed = true;
         this._cts.Cancel();
         this._timer.Stop();
