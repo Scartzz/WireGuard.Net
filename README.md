@@ -1,6 +1,6 @@
 # WireGuard.NET
 
-Prototype of the WireGuard Protocol in .NET (dont use in production)
+Prototype of the WireGuard Protocol in .NET (dont use in production).
 This project was developed as part of a degree course.
 
 It was used to establish a WireGuard connection to several WireGuard servers in user space as a client. 
